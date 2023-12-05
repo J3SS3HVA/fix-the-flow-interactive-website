@@ -1,0 +1,272 @@
+/* main settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* root colors */
+
+:root{
+    --main: #FFFFFF;
+    --primary: #4ECD5D;
+    --secondary: #6DA7DD;
+    --accent: #ff2f2fb4;
+    --greyone: #FAF8F8;
+    --dark: #000;
+}
+/* text styles */
+
+/* normal p */
+p{
+    font-size: 1em;
+    font-weight: 400;
+}
+/* strong p */
+.strong{
+    font-size: 1em;
+    font-weight: 600;
+}
+/* quote p */
+.quote{
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style: italic;
+}
+/* italic p */
+.italic{
+    font-style: italic;
+}
+
+/* main fonts */
+h1{
+    font-size: 52px;
+    font-weight: 800;
+}
+h2{
+    font-size: 42px;
+    font-weight: 700;
+}
+h3{
+    font-size: 34px;
+    font-weight: 600;
+}
+h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* mobile */
+@media  screen and (min-width: 0px) and (max-width: 600px ) {
+h1{
+        font-size: 38px;
+        font-weight: 800;
+    }
+h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+/* tablet */
+@media  screen and (min-width: 600px) and (max-width: 1000px ) {
+h1{
+        font-size: 42px;
+        font-weight: 800;
+    }
+h2{
+        font-size: 36px;
+        font-weight: 700;
+    }
+h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+h4{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+/* Buttons (not links!)*/
+/* primary--button */
+.primary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .primary--button:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--dark);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+
+/* secondary--button */
+.secondary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .secondary--button:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--secondary);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+
+/* light--button */
+.light--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main);
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .light--button:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--secondary);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+
+/* dark--button */
+.dark--button{
+        padding: 0.8em 2em;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--dark);
+        color: var(--main);
+        font-weight: 600;
+        font-size: 1em;
+        transform: scale(100%);
+        transition: ease-out 0.2s;
+    }
+    /* &hover */
+    .light--button:hover{
+            cursor: pointer;
+            background-color: var(--primary);
+            color: var(--main);
+            transform: scale(97%);
+            transition: ease-in 0.2s;
+     }
+    
+/* Links (a) styling*/
+/* primary--link */
+.primary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .primary--link:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--dark);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+
+/* secondary--link */
+.secondary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .secondary--link:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--secondary);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+/* light--link */
+.light--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main);
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+    /* &hover */
+    .light--link:hover{
+        cursor: pointer;
+        background-color: var(--main);
+        color: var(--secondary);
+        transform: scale(97%);
+        transition: ease-in 0.2s;
+    }
+
+/* dark--link */
+.dark--link{
+        padding: 0.8em 2em;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--dark);
+        color: var(--main);
+        font-weight: 600;
+        font-size: 1em;
+        transform: scale(100%);
+        transition: ease-out 0.2s;
+    }
+    /* &hover */
+    .light--link:hover{
+            cursor: pointer;
+            background-color: var(--primary);
+            color: var(--main);
+            transform: scale(97%);
+            transition: ease-in 0.2s;
+     }
+
+/* end main settings */
