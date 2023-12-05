@@ -1,0 +1,16 @@
+body{
+    height: 100vh;
+    background-image: radial-gradient(circle, var(--primary) 25%, var(--main) 25%);;
+}
+header{
+    height: 5%;
+}
+main{
+    height: 90%;
+}
+footer{
+    background-color: var(--footer);
+    width: 100vw;
+    height: 5%;
+}
+

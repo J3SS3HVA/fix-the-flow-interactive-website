@@ -13,12 +13,13 @@ body{
 /* root colors */
 
 :root{
-    --main: #FFFFFF;
+    --main: #FFF;
     --primary: #4ECD5D;
     --secondary: #6DA7DD;
     --accent: #ff2f2fb4;
     --greyone: #FAF8F8;
     --dark: #000;
+    --footer: #446F97;
 }
 /* text styles */
 
