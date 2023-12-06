@@ -24,6 +24,33 @@ main{
     height: 95%;
     background-image: radial-gradient(circle, var(--primary) 25%, var(--main) 25%);
     transition: 0.5s;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "title mainimg paragraph"
+    "... mainimg paragraph"
+    "... mainimg paragraph";
+    ;
+
+}
+
+h2{
+    grid-area: title;
+    margin: auto;
+    text-align: center;
+}
+
+p{
+    grid-area: paragraph;
+}
+
+.img-main{
+    margin: auto;
+    grid-area: mainimg;
+}
+.img-main img{
+   width: 25em;
 }
 footer{
     background-color: var(--footer);
