@@ -46,8 +46,38 @@ main section {
     display: none;
 }
 
+.slide3{
+    display: none;
+}
+
+.slide4{
+    display: none;
+}
+
+.slide5{
+    display: none;
+}
+
+.slide6{
+    display: none;
+}
+
+.slide7{
+    display: none;
+}
+
+.slide8{
+    display: none;
+}
+
 .slide1,
-.slide2 {
+.slide2,
+.slide3,
+.slide4,
+.slide5,
+.slide6,
+.slide7,
+.slide8 {
     transition: opacity 0.5s;
 }
 
