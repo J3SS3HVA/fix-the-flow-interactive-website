@@ -1,12 +1,14 @@
 const layout = document.querySelector(".layout");
 const main = document.querySelector("main");
-const H2 = document.querySelector("h2");
+const H2 = document.querySelectorAll("h2");
 
 layout.addEventListener("click", function() {
-   
     main.classList.toggle('main1');
-    H2.style.color = H2.style.color === 'var(--main)' ? 'var(--tertiary)' : 'var(--main)';
-}) 
+
+    H2.forEach(h2 => {
+        h2.style.color = h2.style.color === 'var(--main)' ? 'var(--tertiary)' : 'var(--main)';
+    });
+}); 
 
 const slide1 = document.querySelector('.slide1');
 const slide2 = document.querySelector('.slide2');
