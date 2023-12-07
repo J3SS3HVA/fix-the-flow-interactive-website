@@ -24,8 +24,12 @@ header{
 main{
     height: 95%;
     background-image: radial-gradient(circle, var(--primary) 25%, var(--main) 25%);
+    transition: 0.5s; 
+}
+
+.main1{
+    background-image: linear-gradient(to bottom right , var(--primary) 50%, var(--main) 50%);
     transition: 0.5s;
-    
 }
 
 main section {
@@ -169,7 +173,3 @@ footer{
     height: 5%;
 }
 
-.main1{
-    background-image: linear-gradient(to bottom right , var(--primary) 50%, var(--main) 50%);
-    transition: 0.5s;
-}
