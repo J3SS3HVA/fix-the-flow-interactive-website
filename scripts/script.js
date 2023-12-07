@@ -3,17 +3,24 @@ const main = document.querySelector("main");
 const sections = document.querySelectorAll("main section");
 const leftButton = document.querySelector('.left');
 const rightButton = document.querySelector('.right');
+// let word gebruikt omdat de current slide nooit altijd op index nr. 0 blijft
 let currentSlide = 0;
 const H2 = document.querySelectorAll("h2");
 
+//functie die de layout en de achtergrond veranderd
+
+// waneer je op de layout button klikt krijgt de main element een class genaamd .main1.
 layout.addEventListener("click", function() {
     main.classList.toggle('main1');
 
+// ook word de h2 text wit van kleur. => is een korte manier voor function
     H2.forEach(h2 => {
         h2.style.color = h2.style.color === 'var(--main)' ? 'var(--tertiary)' : 'var(--main)';
     });
 });
 
+// functie als je op de pijl knoppen klikt naar de volgende of vorige dia gaat
+// i = current index. alle slides hebben een soort van index nummer. 
 function showSlide(index) {
     sections.forEach((section, i) => {
         if (i === index) {
@@ -23,10 +30,13 @@ function showSlide(index) {
         }
     });
 
+    // als index groter dan 0 is is hij hidden if-else is de left button weer zichtbaar?
     leftButton.style.visibility = index > 0 ? 'visible' : 'hidden';
+     // als index kleiner dan sections index length is dan gaat hij een index nummer omlaag en word de vorige index zichtbaar een de rightbutton gaat dan weer weg
     rightButton.style.visibility = index < sections.length - 1 ? 'visible' : 'hidden';
 }
 
+// er zijn 8 slides dan zijn er dus 8 index nummers, maar bij index nummers begint het altijd bij 0. slide 1 = index 0 en slide 8 is dus 7
 rightButton.addEventListener('click', function() {
     if (currentSlide < sections.length - 1) {
         currentSlide++;
@@ -42,7 +52,7 @@ leftButton.addEventListener('click', function() {
 });
 
 
-// pijltjes van rechts naar links
+// pijltjes rechts en links event
 
 showSlide(currentSlide);
 
