@@ -12,7 +12,7 @@ Voor dit project ga ik voor B-rain een carrousel die bestaat uit een aantal slid
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
-![ontwerp2](https://github.com/J3SS3HVA/fix-the-flow-interactive-website/assets/144009667/5ce780b4-59ed-4540-b095-f510ce4a1cb1)
+<img width="500" alt="" src="[https://github.com/J3SS3HVA/fix-the-flow-ui-events/assets/144009667/c08aeacc-12f4-4a59-a4a9-7570ca01e9f7](https://github.com/J3SS3HVA/fix-the-flow-interactive-website/assets/144009667/5ce780b4-59ed-4540-b095-f510ce4a1cb1)">
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
@@ -33,6 +33,10 @@ als laatst heeft het een footer waar je bijvoorbeeld hun linked in page kan vind
 
 ### css 
 Ik werk met 2 css files. 1 main.css waar de huisstijl inzit en wat vaste font styles en een style.css waar ik vooral mee bezig ben geweest.
+
+De slides hebben een section element met als class naam slide en dan het nummer dus class="slide5" 
+
+alle slides zijn grid met een opacity van 0 zodat ze onzichtbaar zijn op slide 1 na. die heeft opacity 1
 
 
 ## Licentie
