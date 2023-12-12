@@ -8,13 +8,22 @@ Voor dit project ga ik voor B-rain een carrousel die bestaat uit een aantal slid
 
 ## User Story
 <!-- Schrijf de user story waar je aan hebt gewerkt  -->
+Voor het bedrijf B-rain maken wij een website die ervoor zorgt dat investeeders informatie krijgen over de B-rain app.
+In de website word kort informatie gegeven over water overlast en hoe je dat kan voorkomen met hun app. Ook vind je een korte instructie in een aantal stappen die laten zien hoe de B-rain app werkt.
+
+Ik zorg ervoor dat alles stap voor stap word weergeven in een Carrousel, zodat het makkelijk te volgen is en er niet teveel komt op het scherm.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+De website zal bestaan uit 3 belangrijke dingen
+
+1. 2 knoppen aan de zijkant die ervoor zorgen dat je naar de volgende/vorige slide kan gaan.
+2. een burger menu als je in 1 keer naar de slide wil gaan waar jij naartoe wilt.
+3. een layout button die de layout veranderd
 <!-- Voeg een mooie poster visual toe 📸 -->
 ![ontwerp2](https://github.com/J3SS3HVA/fix-the-flow-interactive-website/assets/144009667/0a35656c-fd5a-4423-8071-c74e91c3f9a0)
 <!-- Voeg een link toe naar Github Pages 🌐-->
-
+https://github.com/J3SS3HVA/fix-the-flow-interactive-website
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### HTML
