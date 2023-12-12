@@ -36,7 +36,7 @@ Een main die meerdere sections heeft. (de sections zijn de slides)
 
 Elke section heeft een H2 een image en mogelijk ook een paragraph met uitleg.
 
-sommige slides hebben uitzonderingen zoals de contact slides waar je een form heeft om je email bijvoorbeeld door te geven.
+sommige slides hebben uitzonderingen zoals de contact slides waar je een form hebt om je email bijvoorbeeld door te geven.
 
 als laatst heeft het een footer waar je bijvoorbeeld hun linked in page kan vinden 
 
