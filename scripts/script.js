@@ -7,12 +7,23 @@ const rightButton = document.querySelector('.right');
 let currentSlide = 0;
 const H2 = document.querySelectorAll("h2");
 const P = document.querySelectorAll("p");
+const menu = document.querySelector('.menu-button')
+
+// burger menu function
+menu.addEventListener("click", function() {
+    const filter = document.querySelector('div:nth-of-type(1)');
+    filter.classList.toggle('menu-background');
+    menu.style.zIndex = '3';
+    menu.style.filter = menu.style.filter === 'invert(55%)  sepia(100%) saturate(3.5)' ? 'none' : 'invert(55%)  sepia(100%) saturate(3.5)';
+});
 
 //functie die de layout en de achtergrond veranderd
 
 // waneer je op de layout button klikt krijgt de main element een class genaamd .main1.
 layout.addEventListener("click", function() {
     main.classList.toggle('main1');
+    layout.style.zIndex = '1';
+    menu.style.zIndex = '1';
 
 // ook word de h2 text wit van kleur. => is een korte manier voor function
     H2.forEach(h2 => {
