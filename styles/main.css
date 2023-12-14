@@ -21,6 +21,8 @@ body{
     --accent: #ff2f2fb4;
     --greyone: #FAF8F8;
     --dark: #000;
+    --font--headers: 'Lato', sans-serif;
+    --font--text: 'Calibri', sans-serif;;
     
 }
 /* text styles */

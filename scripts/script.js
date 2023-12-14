@@ -7,14 +7,42 @@ const rightButton = document.querySelector('.right');
 let currentSlide = 0;
 const H2 = document.querySelectorAll("h2");
 const P = document.querySelectorAll("p");
-const menu = document.querySelector('.menu-button')
+const menu = document.querySelector('.menu-button');
+const selection = document.querySelector('.menu-selection')
 
 // burger menu function
 menu.addEventListener("click", function() {
     const filter = document.querySelector('div:nth-of-type(1)');
     filter.classList.toggle('menu-background');
-    menu.style.zIndex = '3';
-    menu.style.filter = menu.style.filter === 'invert(55%)  sepia(100%) saturate(3.5)' ? 'none' : 'invert(55%)  sepia(100%) saturate(3.5)';
+    menu.style.zIndex = menu.style.zIndex === '3' ? '1' : '3';
+    menu.style.filter = menu.style.filter === 'brightness(0) saturate(100%) invert(71%) sepia(15%) saturate(1789%) hue-rotate(76deg) brightness(95%) contrast(85%)' ? 'none' : 'brightness(0) saturate(100%) invert(71%) sepia(15%) saturate(1789%) hue-rotate(76deg) brightness(95%) contrast(85%)';
+    selection.style.zIndex = selection.style.zIndex === '4' ? '0' : '4';
+    selection.style.opacity = selection.style.opacity === '1' ? '0' : '1';
+});
+
+// functie die je naar de slide brengt naar keuze wanneer je op 1 van de buttons klikt in de menu
+document.addEventListener('mousedown', function () {
+    const menuLinks = document.querySelectorAll('.menu-selection a');
+
+    // in deze situation zegt forEach dat de volgende functie meetelt voor elke link
+    menuLinks.forEach(function (link, index) {
+        link.addEventListener('click', function () { 
+            
+            const filter = document.querySelector('div:nth-of-type(1)');
+            const menu = document.querySelector('.menu-button');
+            const selection = document.querySelector('.menu-selection');
+
+            // hier haalt hij alles weg die normaal tevoorschijn komt als je op de menu button klikt
+            filter.classList.remove('menu-background');
+            menu.style.zIndex = '1';
+            menu.style.filter = 'none';
+            selection.style.zIndex = '0';
+            selection.style.opacity = '0';
+
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
 });
 
 //functie die de layout en de achtergrond veranderd

@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    <div>
+        <div class="menu-selection">
+            <a value="Home" href="#s1">Home</a>
+            <a value="Welkom" href="#s2">Welkom</a>
+            <a value="Slimme technologie" href="#s3">1.Slimme technologie</a>
+            <a value="Regenton" href="#s4">2.Regenton</a>
+            <a value="Droogte" href="#s5">3.Droogte</a>
+            <a value="Besparing" href="#s6">4. Besparing</a>
+            <a value="Reviews" href="#s7">Reviews</a>
+            <a value="Contact" href="#s8">Contact</a>
+        </div>
+    </div>  
     <header>
         <button class="menu-button"></button>
         <button class="layout primary--button" onclick=Layoutchange()>layout</button>
     </header>
     <main>
-        <section class="slide1">
+        <section id="s1" class="slide1">
             <h2>B-Rain <br>
                 onderdeel van<br> 
                 SPATwater
@@ -24,7 +37,7 @@
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide2">
+        <section id="s2" class="slide2">
             <h2>Welkom
             </h2>
             <div class="img-main">
@@ -34,45 +47,44 @@
                 Klimaatverandering zorgt voor meer droogte en wateroverlast door<br> intense buienOns riool kan al dat water bij een bui vaak niet aan, en<br> zorgt voor wateroverlast envervuild rioolwater in ons toch al kwetsbare<br> oppervlaktewaterHet is tijd om massaal ons regenwater vast te houden<br> en her te gebruiken.Nederland heeft ongeveer 15 miljoen regenpijpen.<br>
 Als je een (kleine) regenton instaleert van 100 liter, en je leegt een volle<br> ton tienkeer in een jaar in je tuin of op je bedrijventerrein...Dan<br> ontlasten we ons riool met 1.5 miljard liter water per jaarMaar hoe zorg<br> je ervoor dat dit gebeurt zonder dat je zelf elke keer de kran van je<br> regenwateropslag ope hoeft te zetten?<br><br>
 Het is tijd om slim met ons water om te gaan: be b-RAIN!
-
             </p>
         </section>
-        <section class="slide3">
-            <h2>test
+        <section id="s3" class="slide3">
+            <h2>test 
             </h2>
             <div class="img-main">
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide4">
+        <section id="s4" class="slide4">
             <h2>test2
             </h2>
             <div class="img-main">
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide5">
+        <section id="s5" class="slide5">
             <h2>test3
             </h2>
             <div class="img-main">
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide6">
+        <section id="s6" class="slide6">
             <h2>test4
             </h2>
             <div class="img-main">
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide7">
+        <section id="s7" class="slide7">
             <h2>test5
             </h2>
             <div class="img-main">
                 <img src="assets/logo_spatwater.png">
             </div>
         </section>
-        <section class="slide8">
+        <section id="s8" class="slide8">
             <h2>test6
             </h2>
             <div class="img-main">
@@ -85,7 +97,7 @@ Het is tijd om slim met ons water om te gaan: be b-RAIN!
         <button class="right"></button>
     </div>
     <footer>
-
+        <p> b-RAIN all rights served</p>
     </footer>
     <script src="scripts/script.js"></script>
 </body>

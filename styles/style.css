@@ -8,7 +8,7 @@ header{
     width: 100%;
     display: flex;
 }
-.menu-button {
+.menu-button{
     width: 3em;
     margin: 0;
     padding: 0;
@@ -22,8 +22,33 @@ header{
     position: relative;
 }
 
+.menu-selection{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--main);
+    padding: 3em 2em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.menu-selection a{
+    text-decoration: none;
+    padding: 10px 0px;
+    border-bottom: 2px solid;
+    color: var(--tertiary);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+a{
+    font-family: var( --font--text);
+}
+
 .primary--button{
     position: relative;
+    font-family: var( --font--text);
 }
 
 .menu-background{
@@ -32,6 +57,10 @@ header{
     height: 100vh;
     background-color: #000000c9;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
 
 
@@ -41,6 +70,7 @@ main{
     position: relative; 
     pointer-events: none;
 }
+
 
 .main1{
     background-image: linear-gradient(to bottom right , var(--primary) 50%, var(--main--transparent) 50%);
@@ -110,15 +140,18 @@ h2{
     transform: translateX(-20px); 
     transition: opacity 0.5s, transform 0.5s; 
     transition: 0.2s;
+    font-family: var(--font--headers);
 }
 
-p{
+main p{
     grid-area: paragraph;
     margin: auto;
     opacity: 1; 
     transform: translateX(20px); 
     transition: opacity 0.5s, transform 0.5s;
+    font-family: var( --font--text);
 }
+
 
 .img-main{
     margin: auto;
@@ -189,11 +222,17 @@ p{
 }
 
 
-
-
 footer{
     background-color: var(--tertiary);
     width: 100vw;
     height: 5%;
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer p{
+    position: relative;
+    font-family: var(--font--headers);
+}
