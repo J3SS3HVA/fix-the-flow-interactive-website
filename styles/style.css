@@ -2,12 +2,14 @@ body{
     height: 100vh;
    
 }
+
 header{
     padding: 0px 50px;
     position: absolute;
     width: 100%;
     display: flex;
 }
+
 .menu-button{
     width: 3em;
     margin: 0;
@@ -24,7 +26,7 @@ header{
 
 .menu-selection{
     opacity: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     background-color: var(--main);
@@ -63,14 +65,12 @@ a{
     transition: 0.5s;
 }
 
-
 main{
     height: 95%;
     background-image: radial-gradient(circle, var(--primary) 25%, var(--main--transparent) 25%);
     position: relative; 
     pointer-events: none;
 }
-
 
 .main1{
     background-image: linear-gradient(to bottom right , var(--primary) 50%, var(--main--transparent) 50%);
@@ -86,7 +86,7 @@ main section {
     height: 100%;
 }
 
-.slide1{
+/* .slide1{
     display: grid;
 }
 
@@ -116,7 +116,7 @@ main section {
 
 .slide8{
     display: grid;
-}
+} */
 
 .slide1,
 .slide2,
@@ -129,6 +129,7 @@ main section {
     transition: opacity 0.5s;
     position: absolute;
     width: 100%;
+    display: grid;
 }
 
 h2{
@@ -158,14 +159,10 @@ main p{
     grid-area: mainimg;
  }
 
- 
-
 .img-main img{
    width: 25em;
    max-width: 100%;
-
 }
-
 
 .slide-buttons{
     width: 100%;
@@ -220,7 +217,6 @@ main p{
 .slide-buttons .right::before {
     content: '→';
 }
-
 
 footer{
     background-color: var(--tertiary);

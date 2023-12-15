@@ -18,6 +18,7 @@ menu.addEventListener("click", function() {
     menu.style.filter = menu.style.filter === 'brightness(0) saturate(100%) invert(71%) sepia(15%) saturate(1789%) hue-rotate(76deg) brightness(95%) contrast(85%)' ? 'none' : 'brightness(0) saturate(100%) invert(71%) sepia(15%) saturate(1789%) hue-rotate(76deg) brightness(95%) contrast(85%)';
     selection.style.zIndex = selection.style.zIndex === '4' ? '0' : '4';
     selection.style.opacity = selection.style.opacity === '1' ? '0' : '1';
+    selection.style.display = selection.style.display === 'flex' ? 'none' : 'flex';
 });
 
 // functie die je naar de slide brengt naar keuze wanneer je op 1 van de buttons klikt in de menu
@@ -38,6 +39,7 @@ document.addEventListener('mousedown', function () {
             menu.style.filter = 'none';
             selection.style.zIndex = '0';
             selection.style.opacity = '0';
+            selection.style.display = 'none';
 
             currentSlide = index;
             showSlide(currentSlide);
