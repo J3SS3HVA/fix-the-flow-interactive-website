@@ -130,6 +130,7 @@ main section {
     position: absolute;
     width: 100%;
     display: grid;
+    justify-items: center;
 }
 
 h2{
@@ -147,10 +148,11 @@ h2{
 main p{
     grid-area: paragraph;
     margin: auto;
-    opacity: 1; 
-    transform: translateX(20px); 
+    opacity: 1;  
     transition: opacity 0.5s, transform 0.5s;
     font-family: var( --font--text);
+    position: fixed;
+    width: max-content;
 }
 
 
@@ -231,4 +233,63 @@ footer{
 footer p{
     position: relative;
     font-family: var(--font--headers);
+}
+
+/* mobile */
+@media  screen and (min-width: 0em) and (max-width: 37.5em ) {
+
+    main section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "... mainimg ..."
+        "... mainimg ..."
+        "... mainimg ...";
+        display: grid;
+        height: 100%;
+    }
+
+    h2{
+        position: absolute;
+        top: 15%;
+    }
+        
+    main p { 
+    opacity: 1;
+    font-family: var(--font--text);
+    top: 65%;
+    font-size: 0.8rem;
+    }
+
+
+}
+
+/* iphone se mobiles wit a small height */
+@media  screen and (max-height: 46.25em ) {
+    main p { 
+        font-size: 0.7em;
+        }
+}
+
+@media  screen and (min-width: 37.5em) and (max-width: 64em ) {
+    main section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "... mainimg ..."
+        "... mainimg ..."
+        "... mainimg ...";
+        display: grid;
+        height: 100%;
+    }
+
+    h2{
+        position: absolute;
+        top: 15%;
+    }
+
+    main p { 
+        opacity: 1;
+        font-family: var(--font--text);
+        top: 65%;
+        font-size: 0.8rem;
+        }
 }
