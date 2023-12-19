@@ -48,12 +48,36 @@ document.addEventListener('mousedown', function () {
 });
 
 //functie die de layout en de achtergrond veranderd
+document.addEventListener("DOMContentLoaded", function() {
+    for (let i = 3; i <= 6; i++) {
+        const section = document.querySelector(`#s${i}`);
+        section.classList.add('secondary-main-achtergrond');
+    }
+});
 
+document.addEventListener("DOMContentLoaded", function() {
+    for (let i = 7; i <= 8; i++) {
+        const section = document.querySelector(`#s${i}`);
+        section.classList.add('tertiary-main-achtergrond');
+    }
+});
 // waneer je op de layout button klikt krijgt de main element een class genaamd .main1.
 layout.addEventListener("click", function() {
     main.classList.toggle('main1');
+
+    for (let i = 3; i <= 6; i++) {
+        const section = document.querySelector(`#s${i}`);
+        section.classList.toggle('main2');
+    }
+
+    for (let i = 7; i <= 8; i++) {
+        const section = document.querySelector(`#s${i}`);
+        section.classList.toggle('main3');
+    }
+
     layout.style.zIndex = '1';
     menu.style.zIndex = '1';
+
 
 // ook word de h2 text wit van kleur. => is een korte manier voor function
     H2.forEach(h2 => {
